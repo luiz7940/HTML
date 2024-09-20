@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Adicione o estilo para a foto */
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px; /* Arredondar os cantos */
+            position: absolute;
+            top: 20px;
+            left: 20px; /* Colocar à esquerda */
+            border: 3px solid white; /* Borda branca */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra da imagem */
+        }
+        /* O resto do estilo já existente permanece aqui */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Fundo claro */
+            color: #343a40;
+        }
+        .header {
+            background: #007bff; /* Azul profissional */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: relative; /* Para posicionar a foto relativa ao header */
+        }
+        .nav {
+            margin: 20px 0;
+        }
+        .nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        h3 {
+            color: #343a40;
+        }
+        .ingredients {
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: left;
+            border-radius: 4px;
+        }
+        th {
+            background: #e9ecef;
+            color: #343a40;
+        }
+        td img {
+            width: 50px;
+            border-radius: 4px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .avaliacao {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            background: #f1f1f1;
+        }
+        .avaliacao h2 {
+            color: #343a40;
+            margin-bottom: 15px;
+        }
+        .avaliacao p {
+            margin: 10px 0;
+        }
+        .avaliacao input[type="text"], .avaliacao textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .avaliacao button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .avaliacao button:hover {
+            background: #0056b3;
+        }
+        .avaliacao .rating {
+            margin-top: 10px;
+        }
+        .avaliacao .rating label {
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="C:\Users\felip\Downloads\EA3DE63D-9069-45D7-95B1-A525ED790531.jpg" alt="Minha Foto" class="profile-pic"> <!-- Adicione sua foto aqui -->
+        <h1>Meu Portfólio</h1>
+        <div class="nav">
+            <a href="#sobre">Sobre</a>
+            <a href="#receitas">Receitas</a>
+            <a href="#contato">Contato</a>
+            <a href="#avaliacao">Avaliação</a>
+        </div>
+    </div>
+
+    <div class="container" id="sobre">
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Olá! Eu sou Luiz Felipe Evangelista, um estudante de análise e desenvolvimento de sistemas. Neste site, compartilho algumas das minhas receitas favoritas, que refletem minha abordagem simples e acessível à cozinha e também peço que no final deixe sua avaliação.</p>
+            <p>Para acompanhar meu trabalho, você pode encontrar em:</p>
+            <div class="sobre-links">
+                <p>
+                    <a href="https://www.instagram.com/seu_usuario" target="_blank">GITHUB</a> | 
+                    <a href="https://www.youtube.com/seu_canal" target="_blank">RECEITA</a>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="container" id="receitas">
+        <section>
+            <h2>Receita de Gelatina</h2>
+            <p>Uma receita simples e deliciosa de gelatina, perfeita para qualquer ocasião.</p>
+            
+            <h3>Lista de Ingredientes:</h3>
+            <div class="ingredients">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingrediente</th>
+                            <th>Quantidade</th>
+                            <th>Imagem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gelatina em pó</td>
+                            <td>1 pacote (sabor de sua preferência)</td>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRusckI7Kg8-mPiLj2PJuLkGp5A6wbAAGLwEQ&s" alt="Gelatina em pó"></td>
+                        </tr>
+                        <tr>
+                            <td>Água quente</td>
+                            <td>1 xícara</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Água fria</td>
+                            <td>1 xícara</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Açúcar (opcional)</td>
+                            <td>1/2 xícara</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Frutas frescas (opcional)</td>
+                            <td>Para adicionar à gelatina</td>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg47B4jDifnDClx9NVhHqEYaDdqcgshtZ_wwJMaQqwtQM-UMlOlE7qY0mTldfJmdaULFk&usqp=CAU" alt="Frutas frescas"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <div class="container" id="avaliacao">
+        <section class="avaliacao">
+            <h2>Avalie o Site</h2>
+            <p>Seu feedback é muito importante para mim! Por favor, preencha o formulário abaixo para deixar sua opinião.</p>
+            <form>
+                <div class="rating">
+                    <label>Nota:</label>
+                    <input type="radio" name="rating" value="1"> 1
+                    <input type="radio" name="rating" value="2"> 2
+                    <input type="radio" name="rating" value="3"> 3
+                    <input type="radio" name="rating" value="4"> 4
+                    <input type="radio" name="rating" value="5"> 5
+                </div>
+                <input type="text" placeholder="Seu Nome" required>
+                <textarea rows="4" placeholder="Sua Avaliação" required></textarea>
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="footer" id="contato">
+        <p>Contato: luiz@luizfelipe.com | Redes Sociais: @luizfelipe</p>
+    </div>
+
+</body>
+</html>
